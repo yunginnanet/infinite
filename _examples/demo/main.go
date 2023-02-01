@@ -13,36 +13,49 @@ import (
 	"github.com/yunginnanet/infinite/components/selection/confirm"
 	"github.com/yunginnanet/infinite/components/selection/multiselect"
 
-	"github.com/fzdwx/infinite/components/spinner"
-	"github.com/fzdwx/infinite/style"
+	"github.com/yunginnanet/infinite/components/spinner"
+	"github.com/yunginnanet/infinite/style"
 )
 
 func main() {
 
 	options := []string{
-		"周杰伦-稻香",
-		"周杰伦-晴天",
-		"海明威-老人与海",
-		"许巍-我相风一样自由",
-		"伍佰-白鸽",
-		"伍佰-枫叶",
-		"陈奕迅-最佳损友",
-		"陈奕迅-富士山下",
-		"陈奕迅-淘汰",
-		"陈奕迅-一丝不挂",
-		"新裤子乐队-花火",
-		"新裤子乐队-你要跳舞吗",
-		"新裤子乐队-生活因你而火热",
-		"新裤子乐队-没有理想的人不伤心",
-		"哪吒乐队-闹海",
-	}
+		"Jay Chou - Daoxiang",
+
+		"Jay Chou-Sunny Day",
+
+		"Hemingway-The Old Man and the Sea",
+
+		"Xu Wei-I am as free as the wind",
+
+		"Wu Bai-White Pigeon",
+
+		"Wu Bai-Maple Leaf",
+
+		"Eason Chan-Best Bad Friend",
+
+		"Eason Chan-Under Mount Fuji",
+
+		"Eason Chan-Elimination",
+
+		"Eason Chan-naked",
+
+		"New Pants Band - Fireworks",
+
+		"New Pants - Do You Want To Dance",
+
+		"New Pants Band-Life is hot because of you",
+
+		"The New Pants Band-People without ideals are not sad",
+
+		"Nezha Band - Naohai"}
 
 	inf.NewSpinner(
 		spinner.WithPrompt(" Loading..."),
 		spinner.WithDisableOutputResult(),
 	).Display(func(spinner *spinner.Spinner) {
 		time.Sleep(time.Millisecond * 100 * 12)
-		spinner.Info("共找到 %d 首歌", len(options))
+		spinner.Info("A total of %d songs were found", len(options))
 	})
 
 	input := components.NewInput()
@@ -51,10 +64,10 @@ func main() {
 
 	selected, _ := inf.NewMultiSelect(options,
 		multiselect.WithFilterInput(input),
-	).Display("请选择你要下载的歌曲")
+	).Display("Please select the song you want to download")
 
 	yes, _ := inf.NewConfirmWithSelection(
-		confirm.WithPrompt(fmt.Sprintf("请问你是否要下载这 %d 首歌", len(selected))),
+		confirm.WithPrompt(fmt.Sprintf("Do you want to download this %d song", len(selected))),
 	).Display()
 
 	if !yes {
@@ -70,9 +83,9 @@ func main() {
 			progress.WithWidth(80)
 			progress.WithTitleView(func(done bool) string {
 				if done {
-					return fmt.Sprintf("下载 %s 成功", title)
+					return fmt.Sprintf("Download %s succeeded", title)
 				}
-				return fmt.Sprintf("下载 %s ...", title)
+				return fmt.Sprintf("Download %s ...", title)
 			})
 			return func() {
 				for i := 0; i < total+1; i++ {

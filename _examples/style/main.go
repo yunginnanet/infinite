@@ -6,7 +6,7 @@ import (
 
 	"github.com/yunginnanet/infinite/color"
 
-	"github.com/fzdwx/infinite/style"
+	"github.com/yunginnanet/infinite/style"
 )
 
 func main() {
