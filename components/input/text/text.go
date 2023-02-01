@@ -129,8 +129,7 @@ func (i *Text) CursorEnd() {
 	i.inner.CursorEnd()
 }
 
-// Reset sets the input to its default state with no input. Returns whether
-// or not the cursor blink should reset.
-func (i *Text) Reset() bool {
-	return i.inner.Reset()
+// Reset sets the input to its default state with no input.
+func (i *Text) Reset() {
+	i.inner.Reset()
 }
