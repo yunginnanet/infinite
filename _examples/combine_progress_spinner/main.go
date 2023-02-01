@@ -2,10 +2,12 @@ package main
 
 import (
 	"errors"
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/pkg/strx"
 	"time"
+
+	tea "github.com/charmbracelet/bubbletea"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/pkg/strx"
 )
 
 func main() {

@@ -1,18 +1,20 @@
 package components
 
 import (
+	"time"
+
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"github.com/fzdwx/infinite/style"
-	"time"
+
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/pkg/strx"
+	"github.com/yunginnanet/infinite/style"
 )
 
 var (
 	InputDefaultRequired            = false
-	InputDefaultRequiredMsg         = style.New().Fg(color.Red).Render("please input text!")
+	InputDefaultRequiredMsg         = style.New().Fg(color.Red).Render("Input is required.")
 	InputDefaultRequiredMsgKeepTime = time.Second * 3
 	InputDefaultStatus              = Focus
 	InputDefaultPrompt              = "> "

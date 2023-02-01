@@ -1,11 +1,13 @@
 package progress
 
 import (
+	"sort"
+
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"sort"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/pkg/strx"
 )
 
 // WithDoneView when Group is done, will callback this func,

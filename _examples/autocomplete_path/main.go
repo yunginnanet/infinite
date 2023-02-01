@@ -1,11 +1,13 @@
 package main
 
 import (
-	"github.com/duke-git/lancet/v2/slice"
-	"github.com/fzdwx/infinite/components"
-	"github.com/sahilm/fuzzy"
 	"path/filepath"
 	"sort"
+
+	"github.com/duke-git/lancet/v2/slice"
+	"github.com/sahilm/fuzzy"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 func main() {

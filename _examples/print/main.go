@@ -1,9 +1,10 @@
 package main
 
 import (
-	inf "github.com/fzdwx/infinite"
-	"github.com/fzdwx/infinite/components/spinner"
 	"time"
+
+	inf "github.com/yunginnanet/infinite"
+	"github.com/yunginnanet/infinite/components/spinner"
 )
 
 func main() {

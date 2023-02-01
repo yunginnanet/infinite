@@ -1,8 +1,9 @@
 package strx
 
 import (
-	"github.com/fzdwx/infinite/style"
 	"strings"
+
+	"github.com/yunginnanet/infinite/style"
 )
 
 type (

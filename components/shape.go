@@ -1,8 +1,9 @@
 package components
 
 import (
-	"github.com/fzdwx/infinite/emoji"
 	"time"
+
+	"github.com/yunginnanet/infinite/emoji"
 )
 
 type (

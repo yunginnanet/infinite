@@ -1,11 +1,11 @@
 package main
 
 import (
-	inf "github.com/fzdwx/infinite"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/components/selection/multiselect"
-	"github.com/fzdwx/infinite/style"
+	inf "github.com/yunginnanet/infinite"
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/components/selection/multiselect"
+	"github.com/yunginnanet/infinite/style"
 )
 
 func main() {
@@ -24,14 +24,14 @@ func main() {
 	},
 		multiselect.WithHintSymbol("x"),
 		multiselect.WithUnHintSymbol("√"),
-		//multiselect.WithDisableOutputResult(),
-		//multiselect.WithCursorSymbol(emoji.PointRight),
-		//multiselect.WithDisableFilter(),
+		// multiselect.WithDisableOutputResult(),
+		// multiselect.WithCursorSymbol(emoji.PointRight),
+		// multiselect.WithDisableFilter(),
 		multiselect.WithFilterInput(input),
 	).
 		Display("select your items!")
 
-	//_, _ = inf.
+	// _, _ = inf.
 	//	NewMultiSelect([]string{"f1", "f2", "f3"}).
 	//	Display()
 }

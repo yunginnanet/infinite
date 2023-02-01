@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/style"
 	"strconv"
+
+	"github.com/yunginnanet/infinite/color"
+
+	"github.com/fzdwx/infinite/style"
 )
 
 func main() {

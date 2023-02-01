@@ -2,8 +2,9 @@ package spinner
 
 import (
 	"github.com/charmbracelet/bubbles/key"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/style"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/style"
 )
 
 type Option func(s *Spinner)

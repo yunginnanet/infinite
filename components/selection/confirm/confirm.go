@@ -2,9 +2,10 @@ package confirm
 
 import (
 	"github.com/charmbracelet/bubbles/key"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"github.com/fzdwx/infinite/style"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/pkg/strx"
+	"github.com/yunginnanet/infinite/style"
 )
 
 type KeyMap struct {

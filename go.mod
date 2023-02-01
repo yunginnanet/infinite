@@ -1,4 +1,4 @@
-module github.com/fzdwx/infinite
+module github.com/yunginnanet/infinite
 
 go 1.18
 

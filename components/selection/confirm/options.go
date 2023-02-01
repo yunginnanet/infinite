@@ -2,10 +2,12 @@ package confirm
 
 import (
 	"github.com/charmbracelet/bubbles/key"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/style"
-	"github.com/fzdwx/infinite/theme"
+
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/style"
+
+	"github.com/yunginnanet/infinite/theme"
 )
 
 var (

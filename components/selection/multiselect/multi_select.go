@@ -1,8 +1,9 @@
 package multiselect
 
 import (
-	"github.com/fzdwx/infinite/components"
 	"github.com/rotisserie/eris"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 type Select struct {

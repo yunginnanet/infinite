@@ -2,19 +2,21 @@ package components
 
 import (
 	"fmt"
+	"sort"
+
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/duke-git/lancet/v2/mathutil"
 	"github.com/duke-git/lancet/v2/slice"
 	"github.com/duke-git/lancet/v2/strutil"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"github.com/fzdwx/infinite/style"
-	"github.com/fzdwx/infinite/theme"
 	"github.com/mattn/go-runewidth"
 	"github.com/sahilm/fuzzy"
-	"sort"
+
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/pkg/strx"
+	"github.com/yunginnanet/infinite/style"
+	"github.com/yunginnanet/infinite/theme"
 )
 
 var (
@@ -22,7 +24,7 @@ var (
 	SelectionDefaultUnCursorSymbol      = " "
 	SelectionDefaultCursorSymbolStyle   = theme.DefaultTheme.CursorSymbolStyle
 	SelectionDefaultChoiceTextStyle     = theme.DefaultTheme.ChoiceTextStyle
-	SelectionDefaultPrompt              = "Please Selection your options:"
+	SelectionDefaultPrompt              = "Please select options:"
 	SelectionDefaultPromptStyle         = style.New().Bold().Fg(color.White)
 	SelectionDefaultHintSymbol          = "✓"
 	SelectionDefaultHintSymbolStyle     = theme.DefaultTheme.MultiSelectedHintSymbolStyle

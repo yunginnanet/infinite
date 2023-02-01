@@ -1,7 +1,7 @@
 package confirm
 
 import (
-	"github.com/fzdwx/infinite/style"
+	"github.com/yunginnanet/infinite/style"
 )
 
 type Option func(confirm *Confirm)

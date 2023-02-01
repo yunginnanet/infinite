@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	inf "github.com/fzdwx/infinite"
-	"github.com/fzdwx/infinite/components/selection/singleselect"
+
+	inf "github.com/yunginnanet/infinite"
+	"github.com/yunginnanet/infinite/components/selection/singleselect"
 )
 
 func main() {

@@ -3,7 +3,8 @@ package spinner
 import (
 	"errors"
 	"fmt"
-	"github.com/fzdwx/infinite/components"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 type Spinner struct {

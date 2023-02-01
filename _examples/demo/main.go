@@ -6,11 +6,13 @@ import (
 
 	"github.com/duke-git/lancet/v2/random"
 	"github.com/duke-git/lancet/v2/strutil"
-	inf "github.com/fzdwx/infinite"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/components/selection/confirm"
-	"github.com/fzdwx/infinite/components/selection/multiselect"
+
+	inf "github.com/yunginnanet/infinite"
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/components/selection/confirm"
+	"github.com/yunginnanet/infinite/components/selection/multiselect"
+
 	"github.com/fzdwx/infinite/components/spinner"
 	"github.com/fzdwx/infinite/style"
 )

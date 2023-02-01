@@ -1,8 +1,9 @@
 package multiselect
 
 import (
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/style"
+	"github.com/yunginnanet/infinite/components"
+
+	"github.com/yunginnanet/infinite/style"
 )
 
 // Option the option of Select
@@ -110,7 +111,7 @@ func WithPromptStyle(style *style.Style) Option {
 	}
 }
 
-// WithPrompt default is "Please selection your options:"
+// WithPrompt default is "Please select options:"
 func WithPrompt(prompt ...string) Option {
 	return func(s *Select) {
 		if len(prompt) >= 1 && len(prompt[0]) > 0 {

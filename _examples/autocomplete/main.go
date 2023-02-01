@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/slice"
-	"github.com/fzdwx/infinite/components"
-	"github.com/sahilm/fuzzy"
 	"sort"
+
+	"github.com/duke-git/lancet/v2/slice"
+	"github.com/sahilm/fuzzy"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 func main() {
@@ -15,7 +17,7 @@ func main() {
 	}
 
 	input := components.NewInput()
-	//input.Model.SetValue("你好啊啊啊")
+	// input.Model.SetValue("你好啊啊啊")
 	c := components.NewAutocomplete(func(valCtx components.AutocompleteValCtx) ([]string, bool) {
 		matches := fuzzy.Find(valCtx.CursorWord(), suggesterOptions)
 		if len(matches) == 0 {

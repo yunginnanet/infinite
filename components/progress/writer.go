@@ -1,8 +1,9 @@
 package progress
 
 import (
-	"github.com/fzdwx/infinite/components"
 	"io"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 type Transfer struct {

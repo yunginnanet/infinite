@@ -2,17 +2,19 @@ package components
 
 import (
 	"fmt"
-	"github.com/charmbracelet/bubbles/key"
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"github.com/fzdwx/infinite/style"
-	"github.com/lucasb-eyer/go-colorful"
-	"github.com/muesli/reflow/ansi"
 	"math"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/charmbracelet/bubbles/key"
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/lucasb-eyer/go-colorful"
+	"github.com/muesli/reflow/ansi"
+
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/pkg/strx"
+	"github.com/yunginnanet/infinite/style"
 )
 
 var (

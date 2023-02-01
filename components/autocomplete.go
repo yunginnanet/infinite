@@ -1,11 +1,13 @@
 package components
 
 import (
+	"strings"
+
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/duke-git/lancet/v2/strutil"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"strings"
+
+	"github.com/yunginnanet/infinite/pkg/strx"
 )
 
 // Suggester get suggest options
@@ -36,7 +38,7 @@ func (a AutocompleteValCtx) CursorVal() string {
 		return strx.Empty
 	}
 
-	// fix https://github.com/fzdwx/infinite/issues/9
+	// fix https://github.com/yunginnanet/infinite/issues/9
 	values := strings.Split(a.Value, strx.Empty)
 	cursorVal := strings.Join(values[:a.Cursor], strx.Empty)
 

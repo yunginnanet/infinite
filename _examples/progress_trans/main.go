@@ -2,11 +2,12 @@ package main
 
 import (
 	"flag"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/components/progress"
 	"net/http"
 	"os"
 	"path"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/components/progress"
 )
 
 var urlF = flag.String("d", "", "download url")

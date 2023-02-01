@@ -1,7 +1,7 @@
 package confirm
 
 import (
-	"github.com/fzdwx/infinite/components"
+	"github.com/yunginnanet/infinite/components"
 )
 
 type Confirm struct {

@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/fzdwx/infinite/components"
 	"time"
+
+	"github.com/yunginnanet/infinite/components"
 )
 
 func main() {

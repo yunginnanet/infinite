@@ -1,9 +1,10 @@
 package singleselect
 
 import (
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/components/selection/multiselect"
-	"github.com/fzdwx/infinite/style"
+	"github.com/yunginnanet/infinite/components"
+
+	"github.com/yunginnanet/infinite/components/selection/multiselect"
+	"github.com/yunginnanet/infinite/style"
 )
 
 // Option the option of Select
@@ -90,7 +91,7 @@ func WithPromptStyle(style *style.Style) Option {
 	}
 }
 
-// WithPrompt default is "Please selection your options:"
+// WithPrompt default is "Please select your options:"
 func WithPrompt(prompt ...string) Option {
 	return func(s *Select) {
 		s.inner.Apply(multiselect.WithPrompt(prompt...))

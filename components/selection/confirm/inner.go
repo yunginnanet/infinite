@@ -1,12 +1,14 @@
 package confirm
 
 import (
+	"strings"
+
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"strings"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/pkg/strx"
 )
 
 type switchIt int

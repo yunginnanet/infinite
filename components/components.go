@@ -4,8 +4,9 @@ import (
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/duke-git/lancet/v2/slice"
-	"github.com/fzdwx/infinite/style"
-	"github.com/fzdwx/infinite/theme"
+
+	"github.com/yunginnanet/infinite/style"
+	"github.com/yunginnanet/infinite/theme"
 )
 
 type (
@@ -39,7 +40,7 @@ func NewAutocomplete(suggester Suggester) *Autocomplete {
 		ShouldNewSelection:   true,
 		SelectionCreator:     DefaultSelectionCreator,
 		SuggestionViewRender: NewLineSuggestionRender,
-		//SuggestionViewRender: TabSuggestionRender,
+		// SuggestionViewRender: TabSuggestionRender,
 	}
 }
 

@@ -2,8 +2,9 @@ package theme
 
 import (
 	"github.com/charmbracelet/lipgloss"
-	"github.com/fzdwx/infinite/color"
-	"github.com/fzdwx/infinite/style"
+
+	"github.com/yunginnanet/infinite/color"
+	"github.com/yunginnanet/infinite/style"
 )
 
 type Theme struct {

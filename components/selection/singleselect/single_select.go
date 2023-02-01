@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/components/selection/multiselect"
+	"github.com/yunginnanet/infinite/components"
+
+	"github.com/yunginnanet/infinite/components/selection/multiselect"
 )
 
 type Select struct {
@@ -56,7 +57,7 @@ func (s *Select) mapMultiToSingle() {
 	}))
 
 	// replace prompt
-	ops = append(ops, WithPrompt("Please selection your option:"))
+	ops = append(ops, WithPrompt("Please select your option:"))
 
 	// replace key binding
 	ops = append(ops, WithKeyBinding(components.DefaultSingleKeyMap()))

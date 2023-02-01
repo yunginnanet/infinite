@@ -4,10 +4,11 @@ import (
 	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/pkg/strx"
-	"github.com/fzdwx/infinite/style"
-	"github.com/fzdwx/infinite/theme"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/pkg/strx"
+	"github.com/yunginnanet/infinite/style"
+	"github.com/yunginnanet/infinite/theme"
 )
 
 // inner is confirm impl

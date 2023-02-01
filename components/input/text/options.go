@@ -1,9 +1,10 @@
 package text
 
 import (
-	"github.com/fzdwx/infinite/components"
-	"github.com/fzdwx/infinite/style"
 	"time"
+
+	"github.com/yunginnanet/infinite/components"
+	"github.com/yunginnanet/infinite/style"
 )
 
 type Option func(i *Text)
