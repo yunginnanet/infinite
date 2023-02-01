@@ -123,12 +123,12 @@ func (i *Input) Value() string {
 
 // Cursor returns the cursor position.
 func (i *Input) Cursor() int {
-	return i.Model.Cursor()
+	return i.Model.Position()
 }
 
 // Blink returns whether or not to draw the cursor.
 func (i *Input) Blink() bool {
-	return i.Model.Blink()
+	return i.Model.CursorStyle.GetBlink()
 }
 
 // SetCursor moves the cursor to the given position. If the position is
@@ -154,8 +154,8 @@ func (i *Input) CursorEnd() {
 
 // Reset sets the Input to its default state with no Input. Returns whether
 // or not the cursor blink should reset.
-func (i *Input) Reset() bool {
-	return i.Model.Reset()
+func (i *Input) Reset() {
+	i.Model.Reset()
 }
 
 // CursorMode returns the model's cursor mode. For available cursor modes, see
